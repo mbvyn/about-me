@@ -686,7 +686,36 @@ section {
     transform: rotate(360deg);
   }
 }
+.toggle-header {
+  cursor: pointer;
+  padding: 10px;
+  background: #e9e8e6;
+  margin-bottom: 5px;
+  border: 1px solid #D4AF37;
+  border-radius: 5px;
+  transition: background 0.3s;
+  position: relative;
+}
 
+.toggle-header:hover {
+  background: #D4AF37;
+  color: #fff;
+}
+
+.years {
+  float: right;
+  font-size: 17px;
+  font-weight: normal;
+  color: #888888;
+}
+
+.toggle-content {
+  display: none;
+  padding: 10px;
+  border: 1px solid #e9e8e6;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

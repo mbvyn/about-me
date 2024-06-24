@@ -89,7 +89,20 @@
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
   }
-
+  /**
+   * Resume toggle
+   */
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleHeaders = document.querySelectorAll('.toggle-header');
+    
+    toggleHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const content = header.nextElementSibling;
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+});
+  
   /**
    * Mobile nav toggle
    */
